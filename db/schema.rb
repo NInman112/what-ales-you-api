@@ -16,10 +16,14 @@ ActiveRecord::Schema.define(version: 2019_05_10_181908) do
   enable_extension "plpgsql"
 
   create_table "beers", force: :cascade do |t|
-    t.string "name"
-    t.string "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string "name", default: "N/A"
+    t.string "description", default: "N/A"
+    t.string "ibuMin", default: "N/A"
+    t.string "ibuMax", default: "N/A"
+    t.string "abvMin", default: "N/A"
+    t.string "abvMax", default: "N/A"
+    t.boolean "avaiable", default: false
+    t.string "labelImgUrl", default: "N/A"
   end
 
 end

@@ -9,7 +9,7 @@ class CreateBeers < ActiveRecord::Migration[5.2]
       t.string :abvMax, default: 'N/A'
       t.boolean :avaiable, default: false
       t.string :labelImgUrl, default: 'N/A'
-
+      
     end
   end
 end
